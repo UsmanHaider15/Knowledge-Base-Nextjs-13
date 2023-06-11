@@ -175,11 +175,7 @@ export default async function Page({ params }: PageProps) {
                 )}
               </div>
             </div>
-            <aside
-              className="block relative text-zinc-600 md:float-left md:pl-4"
-              itemType="https://schema.org/WPSideBar"
-              style={{ minHeight: 1 }}
-            >
+            <aside className="md:col-span-1 col-span-3">
               <section
                 id="text-2"
                 className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-100"
