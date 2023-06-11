@@ -146,7 +146,7 @@ export default async function Page({ params }: PageProps) {
                       href={`posts/${params.category}/pagination/${
                         parseInt(params.pageNum) - 1
                       }`}
-                      className="inline-block py-2 px-4 text-sm leading-none rounded-sm cursor-pointer bg-zinc-200 dark:bg-zinc-900 hover:outline-0"
+                      className="inline-block py-2 px-4 text-sm leading-none rounded-sm cursor-pointer bg-gray-300 dark:bg-slate-900 hover:outline-0"
                       style={{
                         textDecoration: "none",
                         transition: "all 0.1s ease-in-out 0s",
@@ -162,7 +162,7 @@ export default async function Page({ params }: PageProps) {
                       href={`posts/${params.category}/pagination/${
                         parseInt(params.pageNum) + 1
                       }`}
-                      className="inline-block py-2 px-4 my-0 mr-0 ml-1 text-sm leading-none rounded-sm cursor-pointer bg-zinc-200 dark:bg-zinc-900 hover:outline-0"
+                      className="inline-block py-2 px-4 my-0 mr-0 ml-1 text-sm leading-none rounded-sm cursor-pointer bg-gray-300 dark:bg-slate-900 hover:outline-0"
                       style={{
                         textDecoration: "none",
                         transition: "all 0.1s ease-in-out 0s",
@@ -178,7 +178,7 @@ export default async function Page({ params }: PageProps) {
             <aside className="md:col-span-1 col-span-3">
               <section
                 id="text-2"
-                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
+                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-gray-300 dark:bg-slate-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
@@ -205,7 +205,7 @@ export default async function Page({ params }: PageProps) {
               </section>
               <section
                 id="ht-kb-exit-widget-2"
-                className="block p-8 m-0 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
+                className="block p-8 m-0 text-sm rounded bg-gray-300 dark:bg-slate-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3

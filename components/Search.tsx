@@ -20,7 +20,7 @@ const SearchPage = ({ posts }: { posts: Post[] }) => {
     query && fuse ? fuse.search(query).map((item) => item.item) : [];
 
   return (
-    <div className="relative text-center py-6 bg-zinc-200 dark:bg-zinc-900">
+    <div className="relative text-center py-6 bg-gray-300 dark:bg-slate-900">
       <h2 className="text-3xl pb-4">How can we help?</h2>
       <input
         className="w-full border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 dark:focus:bg-gray-800 dark:focus:border-gray-400 dark:bg-gray-900 dark:border-gray-700 rounded-full"

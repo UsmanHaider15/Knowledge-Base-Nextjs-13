@@ -27,16 +27,24 @@ export default async function PostPage(postProps: CategoryPostProps) {
   }
 
   return (
-    <article className="py-6 prose dark:prose-invert">
-      <h1 className="mb-2">{post.title}</h1>
-      {post.description && (
-        <p className="text-xl mt-0 text-slate-700 dark:text-slate-200">
-          {post.description}
-        </p>
-      )}
-      <hr className="my-4" />
-      <Mdx code={post.body.code} />
-    </article>
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 py-6">
+      <div></div>
+      <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
+        {" "}
+        <article className="py-6 prose dark:prose-invert">
+          <h1 className="mb-2">{post.title}</h1>
+          {post.description && (
+            <p className="text-xl mt-0 text-slate-700 dark:text-slate-200">
+              {post.description}
+            </p>
+          )}
+          <hr className="my-4" />
+          <Mdx code={post.body.code} />
+        </article>
+      </div>
+
+      <div></div>
+    </div>
   );
 }
 

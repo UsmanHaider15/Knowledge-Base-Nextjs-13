@@ -56,7 +56,7 @@ const categories = [
 export default function Home() {
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 bg-zinc-200 dark:bg-zinc-900 py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 bg-gray-300 dark:bg-slate-900 py-6">
         <div></div>
         <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
           <SearchPage
@@ -70,10 +70,10 @@ export default function Home() {
         <div></div>
       </div>
 
-      <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 pt-10">
+      <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 pt-10">
         <div></div>
         <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-3 gap-8">
             <div className="md:col-span-2 col-span-3">
               <h2
                 className="px-0 pt-0 pb-2 mx-0 mt-0 mb-5 font-sans text-xl leading-9 normal-case border-b border-solid border-neutral-200 md:mx-0 md:mt-0 md:mb-8"
@@ -148,7 +148,7 @@ export default function Home() {
             <aside className="md:col-span-1 col-span-3">
               <section
                 id="text-3"
-                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
+                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-gray-300 dark:bg-slate-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
@@ -175,7 +175,7 @@ export default function Home() {
               </section>
               <section
                 id="ht-kb-articles-widget-1"
-                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
+                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-gray-300 dark:bg-slate-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
@@ -289,7 +289,7 @@ export default function Home() {
               </section>
               <section
                 id="ht-kb-exit-widget-1"
-                className="block p-8 m-0 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
+                className="block p-8 m-0 text-sm rounded bg-gray-300 dark:bg-slate-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
