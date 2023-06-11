@@ -107,7 +107,7 @@ export default async function Page({ params }: PageProps) {
                         style={{ listStyle: "outside none none" }}
                       >
                         <a
-                          className="block text-cyan-800 bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                          className="block  bg-transparent cursor-pointer hover:outline-0"
                           href="https://help.mindmappro.com/knowledge-base/what-is-mind-doodle/"
                           style={{
                             textDecoration: "none",
@@ -115,7 +115,7 @@ export default async function Page({ params }: PageProps) {
                           }}
                         >
                           <h2
-                            className="m-0 font-sans text-base leading-normal normal-case text-zinc-800"
+                            className="m-0 font-sans text-base leading-normal normal-case"
                             itemProp="headline"
                             style={{
                               fontWeight: "bold",
@@ -137,16 +137,16 @@ export default async function Page({ params }: PageProps) {
                 ))}
               </ul>
               <div
-                className="table clear-both mx-0 mt-0 mb-5 leading-7 text-zinc-600"
+                className="table clear-both mx-0 mt-0 mb-5 leading-7 "
                 style={{ content: '""' }}
               >
                 {parseInt(params.pageNum) !== 1 && (
-                  <span className="text-zinc-600">
+                  <span>
                     <Link
                       href={`posts/${params.category}/pagination/${
                         parseInt(params.pageNum) - 1
                       }`}
-                      className="inline-block py-2 px-4 text-sm leading-none rounded-sm cursor-pointer bg-zinc-100 hover:bg-gray-200 hover:text-cyan-800 hover:outline-0"
+                      className="inline-block py-2 px-4 text-sm leading-none rounded-sm cursor-pointer bg-zinc-200 dark:bg-zinc-900 hover:outline-0"
                       style={{
                         textDecoration: "none",
                         transition: "all 0.1s ease-in-out 0s",
@@ -157,12 +157,12 @@ export default async function Page({ params }: PageProps) {
                   </span>
                 )}
                 {parseInt(params.pageNum) < totalPages && (
-                  <span className="text-zinc-600">
+                  <span>
                     <Link
                       href={`posts/${params.category}/pagination/${
                         parseInt(params.pageNum) + 1
                       }`}
-                      className="inline-block py-2 px-4 my-0 mr-0 ml-1 text-sm leading-none rounded-sm cursor-pointer bg-zinc-100 hover:bg-gray-200 hover:text-cyan-800 hover:outline-0"
+                      className="inline-block py-2 px-4 my-0 mr-0 ml-1 text-sm leading-none rounded-sm cursor-pointer bg-zinc-200 dark:bg-zinc-900 hover:outline-0"
                       style={{
                         textDecoration: "none",
                         transition: "all 0.1s ease-in-out 0s",
@@ -178,11 +178,11 @@ export default async function Page({ params }: PageProps) {
             <aside className="md:col-span-1 col-span-3">
               <section
                 id="text-2"
-                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-100"
+                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
-                  className="mx-0 mt-0 mb-4 font-sans normal-case text-zinc-800"
+                  className="mx-0 mt-0 mb-4 font-sans normal-case"
                   style={{ fontWeight: "bold", lineHeight: "1.3" }}
                 >
                   Get started at MindMapPro.com
@@ -194,7 +194,7 @@ export default async function Page({ params }: PageProps) {
                       href="https://www.MindMapPro.com"
                       target="_blank"
                       rel="noopener"
-                      className="text-cyan-800 bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                      className=" bg-transparent cursor-pointer  hover:outline-0"
                       style={{ textDecoration: "underline" }}
                     >
                       MindMapPro.com
@@ -205,11 +205,11 @@ export default async function Page({ params }: PageProps) {
               </section>
               <section
                 id="ht-kb-exit-widget-2"
-                className="block p-8 m-0 text-sm rounded bg-zinc-100"
+                className="block p-8 m-0 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
-                  className="mx-0 mt-0 mb-4 font-sans normal-case text-zinc-800"
+                  className="mx-0 mt-0 mb-4 font-sans normal-case"
                   style={{ fontWeight: "bold", lineHeight: "1.3" }}
                 >
                   Need support?
@@ -218,7 +218,7 @@ export default async function Page({ params }: PageProps) {
                   Can't find the answer you're looking for? We're here to help!
                 </div>
                 <a
-                  className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer hover:text-cyan-800 hover:outline-0"
+                  className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer  hover:outline-0"
                   data-ht-kb-exit-href="?hkb-redirect&nonce=99a1d1ae9e&redirect=http%3A%2F%2Fhelp.MindMapPro.com%2Fsubmit-a-ticket%2F&otype=ht_kb_category&oid=3&source=widget"
                   href="?hkb-redirect&nonce=99a1d1ae9e&redirect=http%3A%2F%2Fhelp.MindMapPro.com%2Fsubmit-a-ticket%2F&otype=ht_kb_category&oid=3&source=widget"
                   target="_blank"
