@@ -56,7 +56,7 @@ const categories = [
 export default function Home() {
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 bg-blue-900 text-white dark:bg-slate-900 py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 bg-zinc-200 dark:bg-zinc-900 py-6">
         <div></div>
         <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
           <SearchPage
@@ -76,7 +76,7 @@ export default function Home() {
           <div className="grid grid-cols-3">
             <div className="md:col-span-2 col-span-3">
               <h2
-                className="px-0 pt-0 pb-2 mx-0 mt-0 mb-5 font-sans text-xl leading-9 normal-case border-b border-solid border-neutral-200 text-zinc-800 md:mx-0 md:mt-0 md:mb-8"
+                className="px-0 pt-0 pb-2 mx-0 mt-0 mb-5 font-sans text-xl leading-9 normal-case border-b border-solid border-neutral-200 md:mx-0 md:mt-0 md:mb-8"
                 style={{ fontWeight: "bold" }}
               >
                 Help Topics
@@ -96,7 +96,7 @@ export default function Home() {
                       style={{ listStyle: "outside none none" }}
                     >
                       <Link
-                        className="flex py-6 px-2 w-full h-full text-cyan-800 bg-transparent border-b border-solid cursor-pointer border-neutral-200 hover:text-cyan-800 hover:outline-0"
+                        className="flex py-6 px-2 w-full h-full bg-transparent border-b border-solid cursor-pointer border-neutral-200 hover:outline-0"
                         href={category.slug}
                       >
                         <div
@@ -124,7 +124,7 @@ export default function Home() {
                           style={{ listStyle: "outside none none" }}
                         >
                           <h2
-                            className="self-end m-0 w-full font-sans text-lg leading-tight normal-case text-zinc-800"
+                            className="self-end m-0 w-full font-sans text-lg leading-tight normal-case"
                             style={{
                               fontWeight: "bold",
                               listStyle: "outside none none",
@@ -145,33 +145,29 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <aside
-              className="md:col-span-1 col-span-3"
-              itemType="https://schema.org/WPSideBar"
-              style={{ minHeight: 1 }}
-            >
+            <aside className="md:col-span-1 col-span-3">
               <section
                 id="text-3"
-                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-100"
+                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
-                  className="mx-0 mt-0 mb-4 font-sans normal-case text-zinc-800"
+                  className="mx-0 mt-0 mb-4 font-sans normal-case"
                   style={{ fontWeight: "bold", lineHeight: "1.3" }}
                 >
-                  Get started at mindmappro.com
+                  Get started at nextjstemplatestore.com
                 </h3>
                 <div className="leading-5">
                   <p className="m-0">
                     Visit&nbsp;
                     <a
-                      href="https://www.mindmappro.com"
+                      href="https://www.nextjstemplatestore.com"
                       target="_blank"
                       rel="noopener"
-                      className="text-cyan-800 bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                      className="bg-transparent cursor-pointer hover:outline-0"
                       style={{ textDecoration: "underline" }}
                     >
-                      MindMapPro.com
+                      nextjstemplatestore.com
                     </a>
                     .
                   </p>
@@ -179,11 +175,11 @@ export default function Home() {
               </section>
               <section
                 id="ht-kb-articles-widget-1"
-                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-100"
+                className="block p-8 mx-0 mt-0 mb-5 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
-                  className="mx-0 mt-0 mb-4 font-sans normal-case text-zinc-800"
+                  className="mx-0 mt-0 mb-4 font-sans normal-case"
                   style={{ fontWeight: "bold", lineHeight: "1.3" }}
                 >
                   Popular Articles
@@ -197,7 +193,7 @@ export default function Home() {
                     }}
                   >
                     <a
-                      className="py-0 pr-6 pl-0 text-cyan-800 break-words bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                      className="py-0 pr-6 pl-0 break-words bg-transparent cursor-pointer hover:outline-0"
                       href="https://help.mindmappro.com/knowledge-base/advanced-swot/"
                       style={{
                         textDecoration: "none",
@@ -217,7 +213,7 @@ export default function Home() {
                     }}
                   >
                     <a
-                      className="py-0 pr-6 pl-0 text-cyan-800 break-words bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                      className="py-0 pr-6 pl-0 break-words bg-transparent cursor-pointer hover:outline-0"
                       href="https://help.mindmappro.com/knowledge-base/manage-team/"
                       style={{
                         textDecoration: "none",
@@ -237,7 +233,7 @@ export default function Home() {
                     }}
                   >
                     <a
-                      className="py-0 pr-6 pl-0 text-cyan-800 break-words bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                      className="py-0 pr-6 pl-0 break-words bg-transparent cursor-pointer hover:outline-0"
                       href="https://help.mindmappro.com/knowledge-base/wordpress-sitemap/"
                       style={{
                         textDecoration: "none",
@@ -257,7 +253,7 @@ export default function Home() {
                     }}
                   >
                     <a
-                      className="py-0 pr-6 pl-0 text-cyan-800 break-words bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                      className="py-0 pr-6 pl-0 break-words bg-transparent cursor-pointer hover:outline-0"
                       href="https://help.mindmappro.com/knowledge-base/media/"
                       style={{
                         textDecoration: "none",
@@ -277,7 +273,7 @@ export default function Home() {
                     }}
                   >
                     <a
-                      className="py-0 pr-6 pl-0 text-cyan-800 break-words bg-transparent cursor-pointer hover:text-cyan-800 hover:outline-0"
+                      className="py-0 pr-6 pl-0 break-words bg-transparent cursor-pointer hover:outline-0"
                       href="https://help.mindmappro.com/knowledge-base/tasks/"
                       style={{
                         textDecoration: "none",
@@ -293,11 +289,11 @@ export default function Home() {
               </section>
               <section
                 id="ht-kb-exit-widget-1"
-                className="block p-8 m-0 text-sm rounded bg-zinc-100"
+                className="block p-8 m-0 text-sm rounded bg-zinc-200 dark:bg-zinc-900"
                 style={{ lineHeight: "1.4" }}
               >
                 <h3
-                  className="mx-0 mt-0 mb-4 font-sans normal-case text-zinc-800"
+                  className="mx-0 mt-0 mb-4 font-sans normal-case"
                   style={{ fontWeight: "bold", lineHeight: "1.3" }}
                 >
                   Need support?
@@ -306,7 +302,7 @@ export default function Home() {
                   Can't find the answer you're looking for? We're here to help!
                 </div>
                 <a
-                  className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer hover:text-cyan-800 hover:outline-0"
+                  className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer hover:outline-0"
                   data-ht-kb-exit-href="?hkb-redirect&nonce=6e1f05e2d1&redirect=http%3A%2F%2Fhelp.mindmappro.com%2Fsubmit-a-ticket%2F&otype=&oid=&source=widget"
                   href="?hkb-redirect&nonce=6e1f05e2d1&redirect=http%3A%2F%2Fhelp.mindmappro.com%2Fsubmit-a-ticket%2F&otype=&oid=&source=widget"
                   target="_blank"

@@ -23,7 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 bg-blue-900 text-white dark:bg-slate-900 py-6">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 bg-zinc-200 dark:bg-zinc-900 py-6">
             <div></div>
             <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
               <header>
