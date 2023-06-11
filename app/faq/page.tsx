@@ -1,32 +1,36 @@
-import React from "react";
+// Define your FAQ item type
+type FAQItem = {
+  question: string;
+  answer: string;
+};
 
-const FaqPage: React.FC = () => {
-  const faqData = [
-    {
-      question: "What is Tailwind CSS?",
-      answer: "Tailwind CSS is a utility-first CSS framework...",
-    },
-    {
-      question: "How do I install Tailwind CSS?",
-      answer: "You can install Tailwind CSS via npm or yarn...",
-    },
-    // Add more FAQ items as needed
-  ];
+const faqItems: FAQItem[] = [
+  {
+    question: "What is Next.js?",
+    answer: "Next.js is a React framework for production.",
+  },
+  {
+    question: "Why use Next.js?",
+    answer:
+      "Next.js offers a number of powerful features like SSG, SSR, and more.",
+  },
+];
 
+const FAQ = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 py-6">
       <div></div>
-      <div className="container mx-auto py-8">
-        <h1 className="text-3xl font-semibold mb-4">
-          Frequently Asked Questions
-        </h1>
-        <div className="grid grid-cols-1 gap-4">
-          {faqData.map((item, index) => (
-            <div key={index} className="border border-gray-200 rounded p-4">
-              <h3 className="text-xl font-medium mb-2">{item.question}</h3>
-              <p className="">{item.answer}</p>
-            </div>
-          ))}
+      <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold leading-tight">FAQ</h1>
+          <div className="mt-12">
+            {faqItems.map((item, index) => (
+              <div key={index} className="mb-8">
+                <h2 className="text-xl font-bold mb-2">{item.question}</h2>
+                <p className="">{item.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div></div>
@@ -34,4 +38,4 @@ const FaqPage: React.FC = () => {
   );
 };
 
-export default FaqPage;
+export default FAQ;

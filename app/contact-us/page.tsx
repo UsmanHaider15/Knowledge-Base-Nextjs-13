@@ -2,10 +2,7 @@ const Contact = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 py-6">
       <div></div>
-      <div
-        className="overflow-hidden px-4 mx-auto leading-7  sm:px-5 md:px-8"
-        style={{ minWidth: 320, maxWidth: 920 }}
-      >
+      <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
         <div className="">
           <article className="block">
             <div className="relative mx-0 mt-0 mb-10" itemProp="articleBody">
@@ -18,9 +15,9 @@ const Contact = () => {
               </h2>
               <p className="mx-0 mt-0 mb-5">
                 Do you need some extra support? Do you still have questions?
-                Perhaps you’d like to tell us how you use Mind Map Pro, or want
-                to provide some feedback. Whatever the context, your comments
-                are always welcome.
+                Perhaps you’d like to tell us how you use Knowledge Base, or
+                want to provide some feedback. Whatever the context, your
+                comments are always welcome.
               </p>
               <p className="mx-0 mt-0 mb-5">
                 Share your thoughts with us using the form below.

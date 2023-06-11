@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="flex-grow">
               <main>{children}</main>
             </div>
-            <footer className="border-t border-gray-900 dark:border-gray-200 p-4 w-full">
+            <footer className="bg-gray-300 dark:bg-slate-900 p-4 w-full">
               <div className="container mx-auto text-center">
                 <p className="mb-3">Copyright © 2023 Knowledge Base Basic</p>
               </div>
