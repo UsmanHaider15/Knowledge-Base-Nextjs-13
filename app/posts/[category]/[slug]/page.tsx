@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
 import { Metadata } from "next";
 import { Mdx } from "@/components/mdx-components";
+import PageNavigation from "@/components/PageNavigation";
 
 interface CategoryPostProps {
   params: {
@@ -27,7 +28,19 @@ export default async function PostPage(postProps: CategoryPostProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 py-6">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4">
+      <PageNavigation
+        paths={[
+          {
+            path: `/posts/${postProps.params.category}/pagination/1`,
+            label: postProps.params.category,
+          },
+          {
+            path: `/posts/${postProps.params.category}/${postProps.params.slug}}`,
+            label: postProps.params.slug,
+          },
+        ]}
+      />
       <div></div>
       <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
         {" "}

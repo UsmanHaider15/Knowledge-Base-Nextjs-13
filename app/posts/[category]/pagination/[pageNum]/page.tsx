@@ -76,8 +76,12 @@ export default async function Page({ params }: PageProps) {
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4">
         <PageNavigation
-          path={`/posts/${params.category}/pagination/${params.pageNum}`}
-          label={params.category}
+          paths={[
+            {
+              path: `/posts/${params.category}/pagination/${params.pageNum}`,
+              label: params.category,
+            },
+          ]}
         />
         <div></div>
         <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1 pt-10">
