@@ -3,7 +3,6 @@ import { allPosts } from "contentlayer/generated";
 
 import { Metadata } from "next";
 import Link from "next/link";
-import SearchPage from "@/components/Search";
 
 interface PageProps {
   params: {
@@ -185,19 +184,19 @@ export default async function Page({ params }: PageProps) {
                   className="mx-0 mt-0 mb-4 font-sans normal-case"
                   style={{ fontWeight: "bold", lineHeight: "1.3" }}
                 >
-                  Get started at MindMapPro.com
+                  Get started at NextJSTemplateStore.com
                 </h3>
                 <div className="leading-5">
                   <p className="m-0">
                     Visit
                     <a
-                      href="https://www.MindMapPro.com"
+                      href="https://www.nextjstemplatestore.com"
                       target="_blank"
                       rel="noopener"
                       className=" bg-transparent cursor-pointer  hover:outline-0"
                       style={{ textDecoration: "underline" }}
                     >
-                      MindMapPro.com
+                      NextJSTemplateStore.com
                     </a>
                     .
                   </p>
@@ -217,20 +216,12 @@ export default async function Page({ params }: PageProps) {
                 <div className="mx-0 mt-0 mb-3 leading-5">
                   Can't find the answer you're looking for? We're here to help!
                 </div>
-                <a
-                  className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer  hover:outline-0"
-                  data-ht-kb-exit-href="?hkb-redirect&nonce=99a1d1ae9e&redirect=http%3A%2F%2Fhelp.MindMapPro.com%2Fsubmit-a-ticket%2F&otype=ht_kb_category&oid=3&source=widget"
-                  href="?hkb-redirect&nonce=99a1d1ae9e&redirect=http%3A%2F%2Fhelp.MindMapPro.com%2Fsubmit-a-ticket%2F&otype=ht_kb_category&oid=3&source=widget"
-                  target="_blank"
-                  rel="nofollow"
-                  style={{
-                    textDecoration: "none",
-                    borderRadius: 99,
-                    transition: "background 0.3s ease-in-out 0s",
-                  }}
+                <Link
+                  className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer hover:outline-0 rounded-full"
+                  href="/contact-us"
                 >
                   CONTACT SUPPORT
-                </a>
+                </Link>
               </section>
             </aside>
           </div>
