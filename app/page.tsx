@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SearchPage from "@/components/Search";
+import SearchPage from "@/components/Banner";
 import { allPosts } from "@/.contentlayer/generated";
 
 const categories = [

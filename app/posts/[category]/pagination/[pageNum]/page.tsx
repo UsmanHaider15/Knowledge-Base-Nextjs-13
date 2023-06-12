@@ -3,6 +3,9 @@ import { allPosts } from "contentlayer/generated";
 
 import { Metadata } from "next";
 import Link from "next/link";
+import SearchPage from "@/components/Banner";
+import SearchPosts from "@/components/SearchPosts";
+import PageNavigation from "@/components/PageNavigation";
 
 interface PageProps {
   params: {
@@ -71,22 +74,13 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <div>
-      {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 bg-blue-900 text-white dark:bg-slate-900 py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4">
+        <PageNavigation
+          path={`/posts/${params.category}/pagination/${params.pageNum}`}
+          label={params.category}
+        />
         <div></div>
-        <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
-          <SearchPage
-            posts={allPosts.map((post: any) => ({
-              title: post.title,
-              description: post.description,
-              slug: post.slug,
-            }))}
-          />
-        </div>
-        <div></div>
-      </div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 gap-4 pt-10">
-        <div></div>
-        <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
+        <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1 pt-10">
           <div className="grid grid-cols-3">
             <div className="md:col-span-2 col-span-3">
               <ul
