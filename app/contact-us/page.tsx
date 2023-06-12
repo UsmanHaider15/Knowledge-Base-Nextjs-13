@@ -1,4 +1,5 @@
 "use client";
+import PageNavigation from "@/components/PageNavigation";
 import React, { useState } from "react";
 
 const ContactPage: React.FC = () => {
@@ -12,9 +13,10 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 py-6">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3">
+      <PageNavigation paths={[{ path: "/contact-us", label: "Contact Us" }]} />
       <div></div>
-      <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
+      <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1 py-8">
         <div className="">
           <form className="max-w-md w-full space-y-6" onSubmit={handleSubmit}>
             <div>

@@ -94,7 +94,7 @@ export default function Home() {
         <div></div>
       </div>
 
-      <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 pt-10">
+      <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-6 2xl:grid-cols-3 py-10">
         <div></div>
         <div className="w-full sm:col-span-1 md:col-span-4 2xl:col-span-1">
           <div className="grid grid-cols-3 gap-8">
