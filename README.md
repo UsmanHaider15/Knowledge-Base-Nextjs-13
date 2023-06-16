@@ -2,7 +2,8 @@
 
 A statically generated knowledge base powered by Next.js 13, TypeScript, TailwindCSS and Contentlayer.
 
-![knowledge base screenshot](screenshot.png)
+![knowledge base screenshot](screenshots/knowledge-base-dark.png)
+![knowledge base screenshot](screenshots/knowledge-base-light.png)
 
 ## Features
 
@@ -10,6 +11,7 @@ A statically generated knowledge base powered by Next.js 13, TypeScript, Tailwin
 - Detailed search functionality for easy navigation.
 - Efficient pagination to effectively manage large volumes of content.
 - Dark and Light theme modes to cater to user preferences.
+- Responsive design
 - Enhanced SEO capabilities.
 - Built with TypeScript for type safety and developer productivity.
 - Custom styling with Tailwind CSS for an attractive, modern UI.

@@ -8,50 +8,43 @@ const categories = [
     label: "Getting Started",
     slug: "posts/getting-started/pagination/1",
     description: "Learn how to get started with Next.js",
-    image_url:
-      "https://help.mindmappro.com/wp-content/uploads/2019/01/icon-gettingstarted-1.png",
+    image_url: "/icon-getting-started.png",
   },
   {
     label: "Integrations",
     slug: "posts/integrations/pagination/1",
     description: "Link Mind Map Pro to WordPress and Slack",
-    image_url:
-      "https://help.mindmappro.com/wp-content/uploads/2019/01/icon-integration.png",
+    image_url: "/icon-integration.png",
   },
   {
     label: "Tool Guides",
     slug: "posts/technical/pagination/1",
     description: "How to streamline workflow with integrated tools",
-    image_url:
-      "https://help.mindmappro.com/wp-content/uploads/2019/01/icon-tools.png",
+    image_url: "/icon-tools.png",
   },
   {
     label: "Task Management Guide",
     slug: "posts/getting-started/pagination/1",
     description: "Learn to stay on track and enhance productivity",
-    image_url:
-      "https://help.mindmappro.com/wp-content/uploads/2019/01/icon-task.png",
+    image_url: "/icon-task.png",
   },
   {
     label: "Team Guides",
     slug: "posts/integrations/pagination/1",
     description: "Information about collaborating and chatting with your team",
-    image_url:
-      "https://help.mindmappro.com/wp-content/uploads/2019/01/icon-team.png",
+    image_url: "/icon-team.png",
   },
   {
     label: "Admin Guide",
     slug: "posts/technical/pagination/1",
     description: "Documentation about managing settings and users",
-    image_url:
-      "https://help.mindmappro.com/wp-content/uploads/2019/01/icon-admin.png",
+    image_url: "/icon-admin.png",
   },
   {
     label: "What's New",
     slug: "posts/technical/pagination/1",
     description: "The latest features and updates at your fingertips",
-    image_url:
-      "https://help.mindmappro.com/wp-content/uploads/2019/01/icon-admin.png",
+    image_url: "/icon-whatsnew.png",
   },
 ];
 
@@ -134,14 +127,10 @@ export default function Home() {
                         >
                           <Image
                             src={category.image_url}
+                            width={35}
+                            height={35}
                             className="block my-0 mx-auto border-none"
                             alt=""
-                            style={{
-                              transition: "all 0.3s ease-in-out 0s",
-                              maxWidth: 35,
-                              maxHeight: 35,
-                              listStyle: "outside none none",
-                            }}
                           />
                         </div>
                         <div
@@ -217,6 +206,7 @@ export default function Home() {
                         lineHeight: "1.3",
                         listStyle: "outside none none",
                       }}
+                      key={article.slug}
                     >
                       <Link href={article.slug}>{article.title}</Link>
                     </li>
@@ -235,7 +225,8 @@ export default function Home() {
                   Need support?
                 </h3>
                 <div className="mx-0 mt-0 mb-3 leading-5">
-                  Can't find the answer you're looking for? We're here to help!
+                  Can&apos;t find the answer you&apos;re looking for? We&apos;re
+                  here to help!
                 </div>
                 <Link
                   className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer hover:outline-0 rounded-full"
