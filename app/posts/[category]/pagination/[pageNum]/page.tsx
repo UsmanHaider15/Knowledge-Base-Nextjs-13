@@ -212,7 +212,8 @@ export default async function Page({ params }: PageProps) {
                   Need support?
                 </h3>
                 <div className="mx-0 mt-0 mb-3 leading-5">
-                  Can't find the answer you're looking for? We're here to help!
+                  Can&apos;t find the answer you&apos;re looking for? We&apos;re
+                  here to help!
                 </div>
                 <Link
                   className="inline-block py-3 px-4 text-xs font-semibold leading-none text-white uppercase bg-cyan-800 cursor-pointer hover:outline-0 rounded-full"

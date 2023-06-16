@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SearchPage from "@/components/Banner";
 import { allPosts } from "@/.contentlayer/generated";
+import Image from "next/image";
 
 const categories = [
   {
@@ -131,7 +132,7 @@ export default function Home() {
                             listStyle: "outside none none",
                           }}
                         >
-                          <img
+                          <Image
                             src={category.image_url}
                             className="block my-0 mx-auto border-none"
                             alt=""
