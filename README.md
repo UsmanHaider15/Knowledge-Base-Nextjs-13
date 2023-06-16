@@ -38,7 +38,7 @@ git clone git@github.com:UsmanHaider15/Knowledge-Base-Nextjs-13.git
 2. Install the dependencies:
 
 ```bash
-cd knowledge-base
+cd Knowledge-Base-Nextjs-13
 yarn install
 ```
 
