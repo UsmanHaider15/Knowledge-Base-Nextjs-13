@@ -1,5 +1,3 @@
-# Next.js + Contentlayer
+# Knowledge Base
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
-
-https://next-contentlayer.vercel.app
+This is the Knowledge Base built using Next.js 13 (app router). 
