@@ -17,6 +17,16 @@ A statically generated knowledge base powered by Next.js 13, TypeScript, Tailwin
 - Custom styling with Tailwind CSS for an attractive, modern UI.
 - Content managed with Contentlayer.
 
+### Note:
+This knowledge base can be configured with various headless CMS options, including:
+
+- [TinaCMS](https://tina.io/)
+- [Sanity.io](https://www.sanity.io/)
+- [ButterCMS](https://buttercms.com/)
+
+If you require assistance in configuring it with any CMS or have any other feature request, please feel free to directly contact me at my email: [usman.haider.developer@gmail.com](mailto:usman.haider.developer@gmail.com).
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -78,7 +88,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## Contact
 
-Usman Haider - usman.haider.developer@email.com
+Usman Haider - usman.haider.developer@gmail.com
 
 Project Link: [https://github.com/UsmanHaider15/Knowledge-Base-Nextjs-13](https://github.com/UsmanHaider15/Knowledge-Base-Nextjs-13)
 
