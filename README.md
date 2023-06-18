@@ -23,7 +23,7 @@ This knowledge base can be configured with various headless CMS options, includi
 - [Sanity.io](https://www.sanity.io/)
 - [ButterCMS](https://buttercms.com/)
 
-If you require assistance in configuring it with any CMS or have any other feature request, please feel free to directly contact me at my email: [usman.haider.developer@gmail.com](mailto:usman.haider.developer@gmail.com).
+If you want to configure it with any CMS or have any feature request then contact me directly at my email: [usman.haider.developer@gmail.com](mailto:usman.haider.developer@gmail.com).
 
 
 ## Getting Started
