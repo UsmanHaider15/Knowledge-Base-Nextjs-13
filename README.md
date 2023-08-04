@@ -2,8 +2,11 @@
 
 A statically generated knowledge base powered by Next.js 13, TypeScript, TailwindCSS and Contentlayer.
 
-![knowledge base screenshot](screenshots/knowledge-base-dark.png)
-![knowledge base screenshot](screenshots/knowledge-base-light.png)
+| Dark Mode                                                         | Light Mode                                                        |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| ![knowledge base screenshot](screenshots/knowledge-base-dark.png) | ![knowledge base screenshot](screenshots/knowledge-base-light.png)|
+
+
 
 ## Features
 - ✅ Statically generated for optimal performance.
